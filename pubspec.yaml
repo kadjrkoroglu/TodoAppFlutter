@@ -1,0 +1,51 @@
+name: test1
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  # Hive kütüphaneleri
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Diğer kütüphaneler
+  cupertino_icons: ^1.0.8
+  flutter_slidable: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+  # flutter_launcher_icons paketi
+  flutter_launcher_icons: "^0.13.1"
+    
+  # Sürüm çakışması çözümü için build_runner
+  build_runner: ^2.4.6 
+  
+  # hive_generator
+  hive_generator: ^2.0.1
+
+  flutter_lints: ^3.0.0
+  
+# --- Uygulama Yapılandırma Bölümü Başlangıcı ---
+
+flutter: # En soldan başlamalıdır
+  uses-material-design: true
+
+flutter_icons: # flutter: ile aynı hizada (en soldan) başlamalıdır
+  # Android için simge adını tanımlar
+  android: "launcher_icon" 
+  # iOS için simge oluşturulmasını sağlar
+  ios: true
+  # Simge olarak kullanılacak görselin yolu (assets/app_icon.png var olmalı)
+  image_path: "assets/app_icon.png" 
+  # Opsiyonel adaptif ikon ayarları
+  # adaptive_icon_background: "#FFFFFF" 
+  # adaptive_icon_foreground: "assets/app_icon_foreground.png"
